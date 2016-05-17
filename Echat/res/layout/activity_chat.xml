@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:background="@android:color/black"
+    >
+    <ListView android:id="@+id/list"
+              android:layout_width="fill_parent"
+              android:layout_height="0dip"
+              android:layout_weight="1"
+              android:transcriptMode="alwaysScroll" />
+             <!--   android:cacheColorHint="#00000000"
+              android:listSelector="@android:color/transparent" --> 
+
+
+    <LinearLayout android:id="@+id/footer"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:orientation="horizontal"
+                  android:gravity="bottom">
+
+        <EditText android:inputType="textMultiLine|textNoSuggestions"
+                  android:layout_width="0dp"
+                  android:layout_height="40dp"
+                  android:id="@+id/editText"
+                  android:layout_weight="1"
+                  android:textColor="@android:color/white"/>
+
+        
+         <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/attach_button"
+                android:layout_gravity="center_vertical"
+                android:text="Attach"
+                android:background="#00B8D4" />
+        
+         <Space
+        android:layout_width="0dp"
+        android:layout_height="1dp"
+        android:layout_weight="0.03">
+</Space>
+        
+        <!-- send button -->
+        <Button android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/send_button"
+                android:layout_gravity="center_vertical"
+                android:text="Send" 
+                android:background="#00B8D4" />
+       
+
+    </LinearLayout>
+</LinearLayout>
+
